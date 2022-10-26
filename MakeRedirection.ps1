@@ -71,11 +71,11 @@ $tools_path = (Get-Location).Path;
 
 #FORMAT NAZWY PLIKU 
 #
-#nsd_W32I_MKN-2358_2022_10_24@10_19_27
+#nsd_W32I_XXX-6666_2022_10_24@10_19_27
 #
 #nsd_ <- sta³e
 #W32I_ <- znane
-#MKN-2358_ <- nazwa komputera
+#XXX-6666_ <- nazwa komputera
 #2022_10_24@10_19_27 <- data w formacie YYYY-MM-DD@HH_MM_SS
 
 $computer_name = $env:COMPUTERNAME;
